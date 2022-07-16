@@ -1,0 +1,12 @@
+---
+import '../styles/global.scss';
+const { title, description } = Astro.props;
+---
+<meta charset="UTF-8">
+<meta name="preconnect" content="//pa.basswave.net">
+<meta name="viewport" content="width=device-width">
+<title>{title}</title>
+<meta name="description" property="og:description" content={description}>
+<meta name="robots" content="index">
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<script defer data-domain="nadixsnow.cool" src="//pa.basswave.net/js/plausible.js"></script>

@@ -1,0 +1,14 @@
+footer {
+/*      background-color: rgba(0,0,0,.5); */
+	text-align: right;
+}
+
+/* Portrait and Landscape */
+@media screen 
+and (max-device-width: 640px) {
+  footer {
+    text-align: center;
+    /* background-image: radial-gradient(ellipse farthest-corner at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)); */
+  }
+}
+
