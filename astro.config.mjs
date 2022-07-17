@@ -1,13 +1,12 @@
 import { defineConfig } from 'astro/config';
 import compress from "astro-compress";
-import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [compress(), preact()],
+  integrations: [compress()],
   vite: {
     ssr: {
-      external: ["svgo"],
-    },
-  },
-})
+      external: ["svgo"]
+    }
+  }
+});
