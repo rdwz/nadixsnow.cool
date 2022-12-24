@@ -1,11 +1,12 @@
 ---
 import SocialLink from '@components/SocialLink.astro'
-import { BP_LINK, DC_LINK, FB_LINK, IG_LINK, MC_LINK, SC_LINK, SP_LINK } from '../config'
+import { BP_LINK, DC_LINK, FB_LINK, IG_LINK, MC_LINK, RA_LINK, SC_LINK, SP_LINK } from '../config'
 ---
 
 <aside style="padding-left:1rem;">
 	<ul role="list">
 		<SocialLink platform="discogs" link={DC_LINK} />
+		<SocialLink platform="ra" link={RA_LINK} />
 		<SocialLink platform="instagram" link={IG_LINK} />
 		<SocialLink platform="facebook" link={FB_LINK} />
 		<SocialLink platform="soundcloud" link={SC_LINK} />
