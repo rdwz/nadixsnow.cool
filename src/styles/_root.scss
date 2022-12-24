@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	color: var(--c-white);
+	// font-family: 'Inter', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
+		helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+* {
+	box-sizing: content-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--t-active);
+}
+
+h1 {
+	font-size: var(--f-u8);
+}
+
+a:any-link {
+	color: var(--c-white);
+}
+
+li {
+	padding-bottom: 1rem;
+}
+
+// a:hover svg path:first-child {
+// 	fill: #75c8c1;
+// }
+
+// a:hover svg g {
+// 	stroke: #75c8c1;
+// }

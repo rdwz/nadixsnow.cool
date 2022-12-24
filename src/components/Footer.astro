@@ -1,41 +1,41 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon'
 ---
+<footer>
+	<p>
+		Made with <Icon name="mdi:heart-multiple-outline" inline={true} /> in Cologne
+		<Icon name="mdi:code-tags" inline={true} /> by Redwerkz
+		<br />
+		Copyright <Icon name="mdi:copyright" inline={true} />
+		{new Date().getFullYear()} Nadix Snow
+	</p>
+</footer>
 
 <style lang="scss">
-    /* Portrait and Landscape */
-    @media screen and (max-device-width: 640px) {
-        footer {
-            text-align: center
-            /* background-image: radial-gradient(ellipse farthest-corner at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)); */
-        }
-    }
-    
-    footer {
-      /*      background-color: rgba(0,0,0,.5); */
-      position: absolute;
-      bottom: 0; 
-      width: 100%;
-      text-align: right;
+	/* Portrait and Landscape */
+	@media screen and (max-device-width: 640px) {
+		footer {
+			text-align: center;
+			/* background-image: radial-gradient(ellipse farthest-corner at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)); */
+		}
+	}
 
-        p {
-            font-size:12px;
-            text-shadow: 0px 0px 2px #000000, 2px 3px 4px #000000;
-            margin-right: 1rem
-        }
-    }
+	footer {
+		/*      background-color: rgba(0,0,0,.5); */
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: right;
 
-    [astro-icon] {
-        height: 1em;
-        width: 1em;
-    }
+		p {
+			font-size: 12px;
+			text-shadow: 0px 0px 2px #000000, 2px 3px 4px #000000;
+			margin-right: 1rem;
+		}
+	}
+
+	[astro-icon] {
+		height: 1em;
+		width: 1em;
+	}
 </style>
-
-<footer>
-  <p>
-    Made with <Icon name="mdi:heart-multiple-outline" inline={true} /> in Cologne   
-    <Icon name="mdi:code-tags" inline={true}  /> by Redwerkz
-    <br>
-    Copyright <Icon name="mdi:copyright" inline={true}  /> {new Date().getFullYear()} Nadix Snow
-  </p>
-</footer>

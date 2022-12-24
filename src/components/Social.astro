@@ -1,0 +1,132 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<aside style="padding-left:1rem;">
+	<ul style="padding:0;margin-bottom:0;list-style-type:none">
+		<li>
+			<a
+				href="//www.discogs.com/artist/3303214-Nadix"
+				aria-label="Discogs"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Icon name="simple-icons:discogs" />
+			</a>
+			<li>
+				<a
+					href="//ra.co/dj/nadixsnow"
+					aria-label="Resident Advisor"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="ra" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//www.instagram.com/nadixsnow"
+					aria-label="Instagram"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:instagram" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//www.facebook.com/musicbynadix"
+					aria-label="Facebook"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:facebook" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//www.soundcloud.com/nadixsnow"
+					aria-label="Soundcloud"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:soundcloud" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//mixcloud.com/nadixsnow"
+					aria-label="Mixcloud"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:mixcloud" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//www.beatport.com/artist/nadix/177205"
+					aria-label="Beatport"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:beatport" />
+				</a>
+			</li>
+			<li>
+				<a
+					href="//open.spotify.com/album/5kyeMYZOwYNo2MKD9oZigE"
+					aria-label="Spotify"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Icon name="simple-icons:spotify" />
+				</a>
+			</li>
+		</li>
+	</ul>
+</aside>
+
+<style lang="scss">
+	[astro-icon] {
+		height: 2rem;
+		max-width: 3rem;
+	}
+	[astro-icon='ra'] {
+		width: 2.5rem;
+	}
+	[astro-icon='simple-icons:instagram']:hover,
+	[astro-icon='simple-icons:instagram']:focus {
+		color: var(--color-instagram);
+		filter: drop-shadow(0 0 8px var(--color-instagram));
+	}
+	[astro-icon='simple-icons:facebook']:hover {
+		color: var(--color-facebook);
+		filter: drop-shadow(0 0 8px var(--color-facebook));
+	}
+	[astro-icon='ra']:hover,
+	[astro-icon='simple-icons:discogs']:hover {
+		color: white;
+		filter: drop-shadow(0 0 8px white);
+	}
+	[astro-icon='simple-icons:beatport']:hover {
+		color: var(--color-beatport);
+		filter: drop-shadow(0 0 8px var(--color-beatport));
+	}
+	[astro-icon='simple-icons:bandcamp']:hover {
+		color: var(--color-bandcamp);
+		filter: drop-shadow(0 0 8px var(--color-bandcamp));
+	}
+	[astro-icon='simple-icons:spotify']:hover {
+		color: var(--color-spotify);
+		filter: drop-shadow(0 0 8px var(--color-bandcamp));
+	}
+	[astro-icon='simple-icons:mixcloud']:hover {
+		color: var(--color-mixcloud);
+		filter: drop-shadow(0 0 8px var(--color-mixcloud));
+	}
+	[astro-icon='simple-icons:soundcloud']:hover {
+		color: var(--color-soundcloud);
+		filter: drop-shadow(0 0 8px var(--color-soundcloud));
+	}
+</style>
