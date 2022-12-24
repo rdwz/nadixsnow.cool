@@ -1,6 +1,6 @@
 {
 	"name": "nadixsnow.cool",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"private": true,
 	"scripts": {
 		"check": "astro check && prettier -c --plugin-search-dir=. .",
