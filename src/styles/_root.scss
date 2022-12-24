@@ -29,8 +29,19 @@ a:any-link {
 	color: var(--c-white);
 }
 
+ul {
+	// background-color: black;
+	// filter: blur(10px);
+	padding: 0;
+	margin: 0;
+	width: fit-content;
+
+	/* you need to match the shadow color to your background or image border for the desired effect*/
+	// box-shadow: 0 0 8px 8px transparent inset;
+}
+
 li {
-	padding-bottom: 1rem;
+	margin: 1rem 0;
 }
 
 // a:hover svg path:first-child {

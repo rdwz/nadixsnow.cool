@@ -1,0 +1,69 @@
+---
+import { Icon } from 'astro-icon'
+const { link, platform } = Astro.props
+
+const icon = 'simple-icons:' + platform
+---
+
+<li>
+	<a
+		href={new URL('https://' + link)}
+		aria-label={platform}
+		target="_blank"
+		rel="external noopener noreferrer"
+	>
+		<Icon name={icon} />
+	</a>
+	<li>
+		<style lang="scss">
+			[astro-icon] {
+				height: 2rem;
+				max-width: 3rem;
+				transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+				filter: blur(1px) drop-shadow(0 0 8px black);
+			}
+			[astro-icon]:active,
+			[astro-icon]:hover {
+				filter: none;
+				scale: 120%;
+			}
+			[astro-icon='ra'] {
+				width: 2.5rem;
+			}
+			[astro-icon='simple-icons:instagram']:hover,
+			[astro-icon='simple-icons:instagram']:focus {
+				color: var(--color-instagram);
+				filter: drop-shadow(0 0 8px var(--color-instagram));
+			}
+			[astro-icon='simple-icons:facebook']:hover {
+				color: var(--color-facebook);
+				filter: drop-shadow(0 0 8px var(--color-facebook));
+			}
+			[astro-icon='ra']:hover,
+			[astro-icon='simple-icons:discogs']:hover {
+				color: white;
+				filter: drop-shadow(0 0 8px white);
+			}
+			[astro-icon='simple-icons:beatport']:hover {
+				color: var(--color-beatport);
+				filter: drop-shadow(0 0 8px var(--color-beatport));
+			}
+			[astro-icon='simple-icons:bandcamp']:hover {
+				color: var(--color-bandcamp);
+				filter: drop-shadow(0 0 8px var(--color-bandcamp));
+			}
+			[astro-icon='simple-icons:spotify']:hover {
+				color: var(--color-spotify);
+				filter: drop-shadow(0 0 8px var(--color-bandcamp));
+			}
+			[astro-icon='simple-icons:mixcloud']:hover {
+				color: var(--color-mixcloud);
+				filter: drop-shadow(0 0 8px var(--color-mixcloud));
+			}
+			[astro-icon='simple-icons:soundcloud']:hover {
+				color: var(--color-soundcloud);
+				filter: drop-shadow(0 0 8px var(--color-soundcloud));
+			}
+		</style>
+	</li>
+</li>
