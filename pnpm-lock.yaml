@@ -4,7 +4,7 @@ specifiers:
   '@astrojs/sitemap': ^1.0.0
   astro: ^1.7.2
   astro-compress: ^1.1.24
-  astro-compressor: ^0.2.0
+  astro-compressor: ^0.3.0
   astro-icon: ^0.8.0
   astro-robots-txt: ^0.3.10
   autoprefixer: ^10.4.13
@@ -19,7 +19,7 @@ specifiers:
 dependencies:
   '@astrojs/sitemap': 1.0.0
   astro-compress: 1.1.24
-  astro-compressor: 0.2.2
+  astro-compressor: 0.3.0
   astro-icon: 0.8.0
   astro-robots-txt: 0.3.10
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -761,8 +761,8 @@ packages:
       terser: 5.16.1
     dev: false
 
-  /astro-compressor/0.2.2:
-    resolution: {integrity: sha512-oltIyQQwefvBtR9uRqFUYJSrdKuk3QcgT/sTegau7kxdsxkt0g0l39Amb7E5Qz1jXkg+zILBvuR6GAv7ttdYCw==}
+  /astro-compressor/0.3.0:
+    resolution: {integrity: sha512-w2qdtUgd75RDSPX9m693VVr8bFSuLpTPxs/Toy6kEAsr082AOGRivOl/1pmjf6tDWaU07rlX5X5ZV90ZP6/RGg==}
     dev: false
 
   /astro-icon/0.8.0:
